@@ -1,69 +1,17 @@
-@import url(./globas.css);
+@import url(./global.css);
+@import url(./sobreMim.css);
+@import url(./contato.css);
 
-header {
-    background-image: url(../img/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    display: flex;
-    height: 430px;
-    justify-content: space-between;
-    width: 100%;
-}
-
-header>div {
-    align-items: center;
-    display: flex;
-    font-size: 1.75rem;
-    font-weight: 400;
-    height: 60px;
-    justify-content: space-evenly;
-    margin: 5px 5px;
-    width: 15%;
-}
-
-header>div>span {
-    font-size: 1.25rem;
-    font-weight: 400;
-}
-
-
-nav {
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-    height: 50px;
-    margin: 5px 5px;
-}
-
-nav a {
-    color: black;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-nav a:hover {
-    cursor: pointer;
-    font-weight: 600;
-}
-
-nav a:active {
-    font-weight: 700;
-}
-
-.lupa {
-    margin-top: -5px;
-    width: 30px;
-    height: 30px;
-}
+/*Estilização do main*/
 
 main {
     background-color: #bcd4b3;
+    max-width: 100%;
 }
 
-main>h2 {
-    border-bottom: 2px solid #8ea087;
+main h1 {
     background-color: #bcd4b3;
+    border-bottom: 2px solid #8ea087;
     color: #4B4F58;
     font-family: 'Playpen Sans', cursive;
     font-size: 2rem;
@@ -74,32 +22,33 @@ main>h2 {
     padding-top: 5rem;
     padding-bottom: 5rem;
     text-align: center;
+    word-wrap: break-word;
 }
+
+/*Estilização dos cards*/
 
 .content {
     border-bottom: 2px solid #8ea087;
     display: flex;
-    gap: 30px;
-    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem auto;
     max-width: 85%;
-    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
 .card {
     color: #35373bc7;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Playpen Sans', cursive;
-    font-weight: 400;
-    justify-content: space-between;
-
+    max-width: 85%;
+    text-align: center;
 }
 
 .card img {
+    height: auto;
+    max-width: 100%;
     object-fit: cover;
-    height: 300px;
-    width: 360px;
+    padding-top: 2rem;
+    text-align: center;
 
 }
 
@@ -119,60 +68,152 @@ main>h2 {
     cursor: pointer;
     text-transform: uppercase;
     padding: 10px;
-    width: 360px;
+    width: 100%;
 }
 
 .card button:hover {
     font-weight: 700;
+    background-color: #97b090;
 }
+
+/*Estilização Produtos*/
 
 .produtos {
     background-color: #566E4D;
     color: white;
+    text-align: center;
 
 }
 
 .produtos h2 {
     font-family: 'Playpen Sans', cursive;
     font-size: 2rem;
-    font-weight: 500;
     font-style: italic;
-    margin: 1.10rem auto;
+    font-weight: 500;
+    margin: auto;
     max-width: 85%;
-    padding: 5rem 0 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    word-wrap: break-word;
+}
+
+.banner {
+    max-width: 85%;
     text-align: center;
 }
 
-.promocao img {
-    max-width: 85%;
-    margin-left: 8%;
-}
-
-.card__produtos {
+.card-produtos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: space-between;
     margin: auto;
     margin-bottom: 3rem;
-    gap: 15px;
     max-width: 85%;
+    gap: 15px;
     text-align: center;
 }
 
-.card__produtos p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 500;
-    padding: 0.75rem;
+.card-produtos img {
+    margin-top: 1rem;
 
 }
 
-.informe {
+.card-produtos h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
+.card-produtos p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.75rem;
+}
+
+/*Estilização Saiba Mais*/
+
+.saiba-mais {
+    margin: auto;
+    max-width: 100%;
+}
+
+.saiba-mais h1 {
+    border-top: 2px solid #8ea087;
+    max-width: 85%;
+}
+
+.moda-card {
+    align-items: center;
+    background-color: #bcd4b3;
+    border-bottom: 2px solid #8e8e8e;
+    display: flex;
+    gap: 3%;
+    height: 100%;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: 1rem auto;
+}
+
+.moda-card p {
+    display: flex;
+    color: #434343;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    text-align: justify;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.moda-card img {
+    margin-bottom: 5%;
+    margin-top: 3%;
+    height: auto;
+    width: 50%;
+}
+
+.videos {
+    background-color: #566E4D;
+    margin: auto;
+    margin-top: 1%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.videos p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 4rem;
+    max-width: 40%;
+    word-spacing: 1rem;
+
+}
+
+.video-um,
+.video-dois {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 85%;
+    padding-bottom: 4%;
+
+}
+
+/*Estilização Informe*/
+
+.informe {
     background-color: #bcd4b3;
     display: flex;
+    margin: auto;
+    max-width: 85%;
     padding: 4% 3% 1%;
-
 }
 
 .informe__card {
@@ -183,10 +224,7 @@ main>h2 {
     gap: 100px;
     height: 100%;
     justify-content: flex-end;
-    max-width: 85%;
     margin: auto;
-
-
 }
 
 .informe p {
@@ -201,31 +239,9 @@ main>h2 {
 }
 
 .informe img {
-    margin-top: 30PX;
-    margin-bottom: 20PX;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     max-width: 45%;
     max-height: 60%;
-}
 
-.footer {
-    align-items: center;
-    display: flex;
-    gap: 15%;
-    justify-content: center;
-    padding: 1.75rem;
-}
-
-.icons {
-    cursor: pointer;
-    display: flex;
-    gap: 20%;
-}
-
-.footer p {
-    font-family: 'Playpen Sans', cursive;
-    font-size: 0.80rem;
-    font-style: italic;
-    font-weight: 600;
-    text-align: center;
-    padding: 0.5rem;
 }

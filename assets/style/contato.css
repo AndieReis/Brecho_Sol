@@ -1,0 +1,40 @@
+@import url(./global.css);
+
+
+.contato {
+    display: flex;
+    border: 1px dotted pink;
+}
+
+.brecho__sol {
+    color: white;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.brecho_container {
+    background-color: #566E4D;
+    display: flex;
+    
+    margin: auto;
+    max-width: 85%;
+    border: 2px dotted firebrick;
+
+}
+
+.brecho__card {
+    display: flex;
+}
+
+.brecho__card img {
+    width: 50%;
+}
+
+.lista {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 100%;
+    border: 2px double khaki;
+}

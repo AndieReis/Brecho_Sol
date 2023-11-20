@@ -1,0 +1,64 @@
+@import url(./global.css);
+
+.sol {
+    border-bottom: 3px solid #8ea087;
+    margin: auto;
+    width: 100%;
+    padding: 3rem;
+    border-bottom: none;
+}
+
+.sol h1 {
+    border-top: 3px solid #8ea087;
+    border-bottom: none;
+    font-size: 2.5rem;
+    font-family: 'Playpen Sans', cursive;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 2rem;
+    max-width: 85%;
+    padding-top: 2rem;
+}
+
+.info-sol {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-left: 10%;
+    max-width: 85%;
+    border-bottom: 3px solid #8ea087;
+
+}
+
+.info-sol img {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sol-texto {
+    color: #4B4F58;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: auto;
+    max-width: 40%;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+/*Estilização Banner */
+
+.sol-img {
+    background-color: #566E4D;
+    text-align: center;
+    padding: 3rem 0 5rem 0;
+
+}
+
+.sol-banner {
+    border-bottom: 2px solid #8ea087;
+    max-width: 85%;
+    padding: 2rem 0 2rem 0;
+}
